@@ -62,10 +62,22 @@ public class SampleClass {
     public int a;
     public boolean b;
 
-    //    implement a custom .equals(SampleClass other){} method here.
+    public boolean equals(SampleClass obj){
+        if (this.a == obj.a && this.b == obj.b){
+            return true;
+        } else{
+            return false;
+        }
 
+    }
 
-    //    implement a custom .toString(){} method here.
+    public String toString() {
+        return "SampleClass{" +
+               "a=" + a +
+               ", b=" + b +
+               '}';
+    }
+    
 
     
 }
